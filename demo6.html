@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>myhomework</title>
+		<script>
+			function hideImg(){
+				var img = document.getElementById("img1");
+				img.style.display = "none";//隐藏
+			}
+			function showImg(){
+				var img = document.getElementById("img1");
+				img.style.display = "block";
+				
+			}
+		</script>
+	</head>
+	<body>
+		<img id = "img1" alt = "这是一个商品页面图片" title= "商品" src = "C:\Users\admin\桌面\images\1.jpg" 
+			width = "80%"/>
+			<button id = "show" onclick="showImg()"> 显示</button>
+			<button id = "hide" onclick = "hideImg()">隐藏</button>
+	</body>
+</html>
