@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网站首页布局</title>
+		<script>
+	function hideImg(){
+		var img = document.getElementById("img1") ;
+		img.style.display="none" ;//隐藏
+		
+	}
+	
+	function showImg(){
+		var img = document.getElementById("img1") ;
+		img.style.display="block" ;//显示图片
+	}
+</script>
+	</head>
+	<body>
+<!--
+	
+	外层table：8行1列 的
+		第一部分：logo部分
+			嵌套一行3列的表格S
+		第二部分：导航栏部分（菜单部分）
+			一堆超链接
+		第三部分：轮播图部分:引入图片
+		第四部分：
+			最新商品  ：嵌套3行7列的表格
+		第五部分：导入一个广告图片
+		第六部分：热门商品同第四部分
+		第七部分：导入一个图片
+		第八部分：一对超链接+版权所有声明
+-->
+<table border = "1px" bgcolor ="antiquewhite"  cellspacing="0" width = "600px" align = "center" height="300px">
+<tr>
+	<th> 商品 </th>
+	<th> 价格 </th>
+	<th> 销量 </th>
+</tr>
+<tr align="center">
+	<td rowspan="1"></td>
+	<td>
+		<table border ="1px" cellspacing="0" height="100%" width="100%">
+		</table>
+	</td>
+</tr>
+<tr align="center">
+	<td>今日特价</td>
+	<td>199</td>
+	</tr>
+	<tr align="center">
+		<td>商品大促销</td>
+		<td>9.9包邮</td>
+	</tr>
+	
+<img id="img1" alt="这是一个广告图片" title="广告" src="img/f001a62f-a49d-4a4d-b56f-2b6908a0002c_g.jpg" width="100%" />
+<button id="show" onclick="showImg()">显示</button>
+<button id="hide" onclick="hideImg()">隐藏</button>
+<marquee behavior="alternate" 
+	direction="right" bgcolor="aquamarine"loop = "2" scrollamount="15">
+今日人气商家:Aker官方旗舰店</marquee>
+淘宝<sup>&copy;</sup>2019-2020<br />
+</table>
+	</body>
+</html>
