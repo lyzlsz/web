@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签</title>
+		<!--
+        	作者：liusz0501@163.com
+        	时间：2019-05-28
+        	描述：表单标签应用场景:
+        	      1)注册
+        	      2)登录 login.html
+        	    常用属性:action:提交到后台的url地址(http://localhost:8080/XXX)
+        	           method:提交方式
+        	                  常用两个:get post
+        	                  1)get方式提交的数据会显示到地址栏上,url?key (name属性的参数值)=values & key2 = value2
+        	                  2)提交的数据大小有限制
+        	                  3)不适合提交私有(敏感)数据
+        	                                       密码数据加密
+        	                    web md5加密  EE:SpringSecurity安全框架
+        	                  2 post提交方式特点
+        	                    1)post方式不会将数据放到地址栏上  
+        	                    2)提交的数据大小没有限制  请求头 响应头
+        	                    3)适合敏感数据提交   密码加密
+        	                    
+        	            onsubmit(用户提交是否成功)true false
+        -->
+        </head>
+        <body>
+        <form action = "#" method = "get">
+        	<!--input必填属性:name属性
+        		作用:给后台数据做标记
+        	-->
+        	用户名<input type = "text" name = "username"/><br />
+        	密&nbsp;&nbsp;&nbsp;码:<input type = "password" name = "password" /><br />
+        	<input type = "submit" value = "提交"/>
+        </form>
+	</body>
+</html>
