@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>frame</title>
+	</head>
+	<!--注意frameset(框架集)和body不能共存-->
+	<!--body-->
+	<frameset rows="20%,*.10%">
+		<!--链接每个具体的页面-->
+		<frame src ="head.html"/>
+		<!--竖向划分-->
+		<frameset clos="15%,*">
+			<!--frame中的顺序要和clos中的一致-->
+			<frame src="menu.html" />
+			<!--frame中的name属性
+				给当前frame中起名称
+			-->
+			<frame src="main.html" name="main" />
+		</frameset>
+		<frame src="foot.html"/>
+	</frameset>
+	<!--<body>-->
+</html>
