@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS入门</title>
+		<!--内部方式-->
+		<!--<<style>
+			a{
+				color = green
+				front-size=26px
+				
+				/*文本修饰:去掉下划线*/
+				text-decoration:none
+			}
+		</style>-->
+		<!--herf:链接外部css文件
+			rel:固定写法:关联层叠样式表
+		-->
+	</head>
+	<body>
+		<!--
+        	作者：liusz0501@163.com
+        	时间：2019-05-28
+        	描述：
+        	CSS 使用方式:1)行内样式
+        	弊端:1)行内样式一次只能控制一个标签的样式
+        	     2)CSS代码:front-size:36px;color:red;和html标签混合使用.后期不利于管理
+        	CSS使用方式:2)内部方式
+        	在head标签中制定一个子标签:style标签:里面书写css代码
+        	style标签
+        	   选择器{
+        	   	样式;
+        	   }
+        	   特点:可以一次性控制多个标签
+        	   缺点:和html 标签混合使用
+        	CSS使用方式:3)外部方式(实际开发中推荐方式)
+        	需要在css文件中单独写css代码
+        	在当前页面中使用link(head标签中指定)
+        	标签引入外部css文件即可
+        -->
+        <!--<a style = "front-size=36px;color=red;"href="#">超链接1 </a><br/>-->
+		<a herf ="#">超链接1</a><br />
+		<a herf ="#">超链接2</a><br />
+		<a herf ="#">超链接3</a><br />
+	</body>
+</html>
