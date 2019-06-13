@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>盒子模型</title>
+		<style>
+			/*修饰id=main的div*/
+			#main{
+				/*设置div的容量大小:高度和宽度*/
+				width:450px;
+				height:300px;
+				
+				/*指定边框*/
+				border:1px solid #000;
+				
+				/*设置margin
+				 * 上 左 下 右
+				 */
+				margin: 200px 0 0 420px;
+				/*设置外层div的背景*/
+				background-image:url(img/QQ/qq.jpg);
+				background-repeat: no-repeat;
+				background-position: top center;
+			}
+			/*修饰用户名所在的div*/
+			#user{
+				/*设置外边距*/
+				margin: 60px 0 0 100px;
+			}
+			/*修饰密码框的div*/
+			#pwd{
+				/*外边距*/
+				margin: 20px 0 0 100px;
+			}
+			/*修饰按钮的div*/
+			#btn{
+				margin: 20px 0 0 150px;
+			}
+			/*修饰id="reg_btn的样式*/
+            #reg_btn{
+	        /*设置左外边距*/
+	            margin-left: 30px;
+            }
+			/*修饰id="user_input"的input标签*/
+			#user_input{
+				/*设置背景*/
+				background-image: url(img/QQ/head.png);
+				background-repeat: no-repeat;
+				/*左内边距*/
+				padding-left: 28px;
+			}
+			/*修饰id="pwd_input"的input标签*/
+			#pwd_input{
+				/*设置背景*/
+				background-image: url(img/QQ/key.jpg);
+				background-repeat: no-repeat;
+				padding-left: 28px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--h盒子模型:层级布局(div+css)-->
+		<div id="main">
+			<form action="#" method="post">
+				<div id="user">
+					用户名:<input type="text" id="user_input" name="username" />
+				</div>
+				<div id="pwd">
+					密&nbsp;&nbsp;&nbsp;码:<input type="password" id="pwd_input" name="pwd"  />				
+				</div>
+				<div id="btn">
+					<input type="button" value="登录" />
+					<input type="button" id="reg_btn" value="立即注册 " />n
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
