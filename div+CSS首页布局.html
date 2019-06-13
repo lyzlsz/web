@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页布局</title>
+		<style>
+			/*当前超链接标签去掉下划线*/
+			a{
+				text-decoration: none;
+			}
+			.clear{
+				clear:both;
+				
+			}
+			/*第一部分的logo样式*/
+			.header{
+				width:100%;
+			}
+			/*控制每个子div的宽度等样式*/
+			.header div{
+				/*浮动*/
+				float:left;
+				width:33.3%;
+				height:50px;
+				line-height:50px;				
+			}
+			/*控制a标签的内边距*/
+			.header a{
+				padding:10px;
+			}
+			/*第二部分*/
+			.menu{
+				width:100%;
+				background-color:#000;
+				height: 50px;
+				padding-top: 1px;
+			}
+			.menu ul li{
+				list-style-type: none;
+				/*display:none 图片隐藏 block显示 inline设置元素在同一行*/
+				 display: inline;
+			}
+			/*设置外层div下的a标签*/
+			.menu a{
+				font-size:15px;
+				color:#fff;
+				padding:10px;
+			}
+			/*轮播图部分*/
+			.lunbo{
+				width:100%;
+			}
+			.lunbo img{
+				width:100%;
+				margin-top:10px;
+				margin-bottom:10px;
+			}
+			/*第四部分*/
+			.left{
+				float: left;
+				width:16%;
+				height:500px;
+			}
+			.right{
+				float: left;
+				width:84%;
+				height:500px;
+				text-align: center;
+			}
+			/*右边中间图片*/
+			.middle{
+				float:left;
+				width:50%;
+				height: 250px;
+			}
+			/*每个具体的商品*/
+			.item{
+				float:left;
+				width: 16.6%;
+				height:250px;
+			}
+			.adv{
+				width:100%;
+			}
+			.adv img{
+				width:100%;
+			}
+			.foot{
+				width:100%;
+			}
+			.foot p{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!--大的div里面包含8个子div-->
+		<div>
+			<!--第一部分div
+				Logo部分:嵌套3个子div
+			-->
+			<div class="header">
+				<div>
+					<img src="img/img/logo2.png" height="50px" />
+				</div>
+				<div>
+					<img src="img/img/header.jpg" />
+				</div>
+				<div>
+					<a href="#" >注册</a>
+					<a href="#">登录</a>
+					<a href="#">购物车</a>"
+				</div>
+			</div>
+			<!--清除上面的浮动元素-->
+			<div class="clear></div>
+			
+			<!--第二部分:导航条-->
+			<div class="menu">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">手机数码</a></li>
+					<li><a href="#">电脑办公</a></li>
+					<li><a href="#">其他</a></li>
+				</ul>
+			</div>
+			
+			<!--第三部分:轮播图部分-->
+			<div class="lunbo">
+				<img src="img/img/1.jpg" />
+			</div>
+			
+			<!--第四部分:最新商品-->
+			<div class="new">
+				<!--最新商品以及后面的元素-->
+				<div>
+					<h2 style="display: inline;">最新商品</h2>
+					<img src="img/img/title2.jpg" />
+				</div>
+				
+				<!--左边大图div-->
+				<div class="left">
+					<img src="img/products/hao/big01.jpg" />
+				</div>
+				
+				<!--右边具体的商品大的div-->
+				<div class="right"
+					<div class="middle">
+						<img src="img/products/hao/middle01.jpg" />
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small03.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small05.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small06.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small05.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>e
+				</div>
+			</div>
+			
+			<!--第五部分:广告图片-->
+			<div class="adv">
+				<img src="img/products/hao/ad.jpg" />
+			</div>
+			
+			<div class="hot">
+				<!--最热商品以及后面的商品-->
+			    <h2 style="display: inline;">热门商品</h2>
+			    <img src="img/img/title2.jpg" />		
+			</div>
+			<!--左边大图div-->
+				<div class="left">
+					<img src="img/products/hao/big01.jpg" />
+				</div>
+				
+				<!--右边具体的商品大的div-->
+				<div class="right"
+					<div class="middle">
+						<img src="img/products/hao/middle01.jpg" />
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small03.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small05.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small06.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small05.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+					<div class="item">
+						<img src="img/products/hao/small04.jpg" />
+						<p><a href="#">电饭锅</a></p>
+						<p><font color="red">$998</font></p>
+					</div>
+				</div>
+			</div>
+			<!--第七部分-->
+			<div class="adv">
+				<img src="img/image/footer.jpg" />g
+			</div>	
+			
+			<!--第八部分:声明-->
+			<div class="foot">
+				<p>
+					<a href="#">关于我们</a>
+					<a href="#">联系我们</a>
+					<a href="#">投诉建议</a>
+				</p>
+				<p>
+					xxx商城&copy;2019-2020
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
