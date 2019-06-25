@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js常用正则表达</title>
+		
+		<!--js正则表达式格式:
+			var 正则对象 = /正则表达式/;
+			内置对象:正则对象.test(表单中的信息String){
+				//成功
+			}else{
+				//不成功
+			}
+			
+		-->
+		<Script>
+			var str = "mn12ab";
+			//定义正则规则
+			var reg = /^[0-9]{2}$/;
+			if(reg.test(str)){
+				alert("条件成立");
+			}else{
+				alert("条件不成立");
+			}
+		</Script>
+	</head>
+	<body>
+	</body>
+</html>
