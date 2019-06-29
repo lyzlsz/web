@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM编程</title>
+		
+		<!--DOM:Document Object Model文档对象模型编程
+			POM:项目对象模型
+		-->
+		<script>
+			function getUserName(){
+				//方式一:通过id属性值来获取标签对象(id值唯一)
+				//var username = document.getElementById("username");
+				//方式二:通过标签名称来获取标签对象:返回的是列表
+				//var username = document.getElementByTagName("input")[0];
+				//方式三:通过name属性来获取标签对象
+				//var username = document.getElementByName("name")[0];
+				//方式四:通过class属性值获取标签对象
+				var username = document.getElementsByClassName("input_class")[0];
+				alert(username.value);
+			}
+		</script>
+	</head>
+	<body>
+		用户名:<input type="text" class="input_class" name="name" onblur="getUserName()" id="username"  /> <br  />
+	</body>
+</html>
