@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jquery的基本使用</title>
+		<script>
+		/**
+		 * 基本使用步骤:
+		 * 
+		 */
+		
+			$(function(){
+				$("#btn1".click(function(){
+					$("#div1").html("使用Jquery")
+				}))
+				
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button"  id="btn1" value="点击"  />
+		<br  />
+		<div id="div1">
+			div1的内容
+		</div>
+	</body>
+</html>
