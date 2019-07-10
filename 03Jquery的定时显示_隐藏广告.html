@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>定时显示_隐藏广告</title>
+		<!--引入js库-->
+		<script src="jquery-1.11.0.js"></script>
+		<script>
+			/**
+			 * 已进入当前网页,等待3秒,弹出广告,经过5秒隐藏广告
+			 */
+			//Jquery载入事件:就是将当前body中的所有标签都加载完毕
+			function showAdv(){
+				//选中当前img的标签对象
+				$("#img1").slideDown(3000);//3秒后完全显示
+				
+				//触发定时器
+				setTimeout("hideAdv()",5000);
+			}
+			function hideAdv(){
+				//获取img标签对象,设置Jquery的动画效果
+				$("#img1").slideUp(4000);
+			}
+			$(function(){
+				setTimeout("showAdv()",3000);
+				//设置定时器,setTimeout("任务()",毫秒)
+			});
+		</script>
+	</head>
+	<body>
+		
+		<img id="img1" src="img/323152.jpg"  width="70%"  style="display: none;"/>
+	</body>
+</html>
